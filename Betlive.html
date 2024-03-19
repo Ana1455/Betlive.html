@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Race Bet Game</title>
+        <link rel="stylesheet" type="text/css" href="Race Bet Game.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="Race Bet Game.js"></script>
+        
+    </head>
+    <body>
+        <div id="main">
+            <img id="racer1" src="https://files.gamebanana.com/img/ico/sprays/538578b593b47.gif" alt ="flappy bird" /> 
+            <img id="racer2" src="https://orig00.deviantart.net/d92e/f/2011/355/b/2/goku_stand_by_arestwinblade-d4jrskn.gif" alt ="goku" /> 
+            <img id="racer3" src="https://orig00.deviantart.net/8e53/f/2017/252/9/0/tireeie__animated_pixel_art__by_narotiza-dbmwhr0.gif" alt ="sea mosnter" /> 
+            <img id="racer4" src="https://media.giphy.com/media/kuWN0iF9BLQKk/giphy.gif" alt ="pikachu" /> 
+        </div>
+        <div id="sub">
+            <div id="log">
+                <img src="http://pluspng.com/img-png/coin-hd-png-gold-coin-png-image-2400.png"/ id="moneyLogo" >: <span id="moneyDisplay"></span>
+                <br />
+                <br />
+                <div id="winnerDisplay"></div>
+            </div>
+            <div id="control">
+                Bet for:
+                <br />
+                <br />
+                <input type="radio" value="1" name="racerBet" checked="checked"/><label>Flappy B.</label>
+                <input type="radio" value="2" name="racerBet" /><label>Goku</label>
+                <input type="radio" value="3" name="racerBet" /><label>Cthulu</label>
+                <input type="radio" value="4" name="racerBet" /><label>Pikachu</label>
+                <br />
+                <br />
+                Money Bet: <input type="number" id="inputMoney" value="100" />
+                <button onclick="start()">Run</button>
+            </div>
+        </div>
+    </body>
+</html>
